@@ -1,0 +1,26 @@
+var isValidPassword = function(str) {
+    // here we rule out anything that is either 1) less than 8 characters 2) all 
+    // lowercased 3) all uppercased
+    if (str.length < 8 || str === str.toLowerCase() || str === str.toUpperCase()) {
+        return false;
+    }
+
+    // therefore any str that makes it past that point ^^^ is a valid password!
+    return true;
+}
+
+var isValidPassword = function(str) {
+    // even more abbreviated; achieves the same thing as above (returns either true or false)
+    return !(str.length < 8 || str === str.toLowerCase() || str === str.toUpperCase());
+}
+
+// one-line arrow function... can only be a one-liner because we're only doing one action 
+// (in this case evaluating the truthy/falsyness); returns are implicit with one-line arrow
+// functions, thus no 'return' keyword
+var isValidPassword = str => !(str.length < 8 || str === str.toLowerCase() || str === str.toUpperCase());
+
+
+console.log(isValidPassword("RexTheDog")); // true
+console.log(isValidPassword("rexthedog")); // false
+console.log(isValidPassword("REXTHEDOG")); // false
+console.log(isValidPassword("Dog")); // false

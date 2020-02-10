@@ -1,0 +1,5 @@
+const slugify = str => str.toLowerCase().replace(/\s+/g, "");
+
+console.log(slugify("Hi Everyone")); // hieveryone
+console.log(slugify("       favorite tree    ever")); // favoritetreeever
+console.log(slugify("one word")); // oneword
