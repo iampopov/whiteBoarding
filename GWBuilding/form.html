@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <input type="text" name="inputBox" value="" />
+      <input type="button" onclick="evaluateInt(this.form)" value="evaluate" />
+      <p id="result"></p>
+    </form>
+    <script>
+      const result = document.getElementById("result");
+      function evaluateInt(form) {
+        const str = form.inputBox.value.split(",");
+        result.innerText = `The lowest integer is ${Math.min.apply(
+          null,
+          str
+        )} and the highest integer is ${Math.max.apply(null, str)} `;
+      }
+    </script>
+  </body>
+</html>
