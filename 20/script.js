@@ -8,10 +8,13 @@
 // Input: ["horse", "cat", "elephant", "bird"]
 // Output: ["cat", "bird", "horse", "elephant"]
 
+//bubble sort
 
-function count (arr) {
-    return arr.sort((a, b) => a.length - b.length)
-}
+// function count (arr) {
+//     return arr.sort((str1, str2) => str2.length - str1.length)
+// }
+
+const count = (arr) => arr.sort((str1, str2) => str1.length - str2.length)
 
 console.log(count(["green", "blue", "yellow", "red"]));
 console.log(count(["skis", "snowboard", "sled", "ice skates"]));
