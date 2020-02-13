@@ -9,23 +9,57 @@
 // Input: "OoOoOhHh! MaGiCaL!!!"
 // Output: "oOoOoHhH! mAgIcAl!!!"
 
+// function changeCase(arr) {
+   
+//     let outputStr = "";
 
-function changeCase(arr) {
-    //return arr.length
-    reversed = []
-    for (let i = 0; i < arr.length; i++) {
-        //console.log(arr[i]);
-        if (arr[i] === arr[i].toUpperCase()) {
-            //console.log(arr[i] + " is upper");
-            reversed.push(arr[i].toLowerCase())
-        } else {
-            //console.log(arr[i] + ' is lower');
-            reversed.push(arr[i].toUpperCase())
-        }
+//     for (const char of arr) {
         
-    }
-    return reversed.toString().split(',').join('');
-}
+//         outputStr += char === char.toUpperCase() ? char.toLowerCase() : char.toUpperCase();
+//     }
+//     return outputStr;
+// }
+
+// function changeCase(arr) {
+   
+//     const outputStr = arr.split("").map(char => char === char.toUpperCase() ? char.toLowerCase() : char.toUpperCase()).join("")
+
+//     return outputStr;
+// }
+
+const changeCase = arr => arr.split("").map(char => char === char.toUpperCase() ? char.toLowerCase() : char.toUpperCase()).join("")
+
+// function changeCase(arr) {
+   
+//     let outputStr = "";
+
+//     for (const char of arr) {
+//         if ( char === char.toUpperCase()) {
+//             outputStr += char.toLowerCase()
+//         } else {
+//             outputStr += char.toUpperCase();
+//         }
+//     }
+//     return outputStr;
+// }
+
+
+// function changeCase(arr) {
+//     //return arr.length
+//     reversed = []
+//     for (let i = 0; i < arr.length; i++) {
+//         //console.log(arr[i]);
+//         if (arr[i] === arr[i].toUpperCase()) {
+//             //console.log(arr[i] + " is upper");
+//             reversed.push(arr[i].toLowerCase())
+//         } else {
+//             //console.log(arr[i] + ' is lower');
+//             reversed.push(arr[i].toUpperCase())
+//         }
+        
+//     }
+//     return reversed.toString().split(',').join('');
+// }
 
 console.log(changeCase("hello world"));
 console.log(changeCase("HELLO WORLD"));
