@@ -1,0 +1,8 @@
+// 1) filtering our array to return a new array with ONLY odd numbers
+// 2) then reducing our array of odd numbers array down to one single value 
+let sumOddNums = arr => arr.filter(num => num % 2 !== 0).reduce((accum, num) => accum + num, 0);
+
+
+console.log(sumOddNums([6, 71, 3, 2, 9, 4])); // 83
+console.log(sumOddNums([4, 6, 8])) // 0
+console.log(sumOddNums([0, 8, -7, 4, 3])); // -4
