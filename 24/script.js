@@ -16,13 +16,18 @@
 // Input: [2,169,13,-5,0,2,-1], 4
 // Output: 2
 
-function arrTwo(arr, k) {
+// function arrTwo(arr, k) {
 
-    let sortedArr = arr.sort((a, b) => a - b);
+//     let sortedArr = arr.sort((a, b) => a - b);
 
-    return sortedArr[k-1];
+//     return sortedArr[k-1];
     
-}
+// }
+
+const arrTwo =(arr, k) =>  arr.sort((a, b) => a - b)[k-1];
+
+        
+
 
 console.log(arrTwo([3,1,2], 2));
 console.log(arrTwo([15,20,7,10,4,3], 3));
