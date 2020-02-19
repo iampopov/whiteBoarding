@@ -14,24 +14,37 @@
 
 
 function nonCons(arr) {
+//my solution:
+    // for (let i = 0; i<arr.length; i++) {
 
-    for (let i = 0; i<arr.length; i++) {
-
-        if (arr[i+1] - arr[i] == 1) {
-           //console.log("null");
+    //     if (arr[i+1] - arr[i] == 1) {
            
-        } else {
-            if (arr[i+1] == null) {
-                return null;
+    //     } else {
+    //         if (arr[i+1] == null) {
+    //             return null;
                 
-            } else {
+    //         } else {
 
-                return arr[i+1];
-            }
+    //             return arr[i+1];
+    //         }
              
-        }
+    //     }
         
-    }
+    // }
+    
+    ////! Matt's solution
+    // for (let i=0; i < arr.length -1; i++) {
+    //     //adding one to current array member
+    //     const x = arr[i] + 1;
+    //     //then checking to see whether the current array member is our first non - consecutive 
+    //     if (x !== arr[i+1]) {
+    //         return arr[i+1];
+    //     }
+    // }
+    // return null
+    
+    const val = arr.find((num,i) => num !== arr[0] + i);
+    return Number.isInteger(val) ? val : null;
     
 }
 
