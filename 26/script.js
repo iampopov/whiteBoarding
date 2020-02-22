@@ -1,1 +1,24 @@
-//Take an integer n (n >= 0) and a digit d (0 <= d <= 9) as an integer. Square all numbers k (0 <= k <= n) between 0 and n. Count the numbers of digits d used in the writing of all the k**2. Call nb_dig (or nbDig or ...) the function taking n and d as parameters and returning this count.
+// Write a function that takes an array of strings as an argument and returns a sorted array containing the same strings, ordered from shortest to longest.
+
+// For example, if this array were passed as an argument:
+
+// ["Telescopes", "Glasses", "Eyes", "Monocles"]
+
+// Your function would return the following array:
+
+// ["Eyes", "Glasses", "Monocles", "Telescopes"]
+
+// All of the strings in the array passed to your function will be different lengths, so you will not have to decide how to order multiple strings of the same length.
+
+function sortByLength (array) {
+    // Return an array containing the same strings, ordered from shortest to longest
+
+    return array.sort((a, b) => a.length - b.length)
+  };
+
+  console.log(sortByLength(["Telescopes", "Glasses", "Eyes", "Monocles"]));
+  
+  console.log(sortByLength(["Beg", "Life", "I", "To"]));
+  
+  console.log(sortByLength(["Longer", "Longest", "Short"]));
+  
