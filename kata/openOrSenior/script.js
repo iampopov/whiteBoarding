@@ -22,7 +22,7 @@ function openOrSenior(data){
 
     // for (let i = 0; i < data.length; i++) {
         
-    //     if (data[i][0] > 54 && data[i][1] > 6) {
+    //     if (data[i][0] > 54 && data[i][1] > 7) {
     //         result.push('Senior')
     //     } else {
     //         result.push('Open')
@@ -30,7 +30,7 @@ function openOrSenior(data){
     // }
     // return result;
     return data.map(r => {
-        if(r[0]>54 && r[1]>6) {
+        if(r[0]>54 && r[1]>7) {
             return 'Senior'
         } else {
             return 'Open'
@@ -41,5 +41,6 @@ function openOrSenior(data){
   console.log(openOrSenior([[45, 12],[55,21],[19, -2],[104, 20]])); //['Open', 'Senior', 'Open', 'Senior']
   console.log(openOrSenior([[3, 12],[55,1],[91, -2],[54, 23]])); //['Open', 'Open', 'Open', 'Open']
   console.log(openOrSenior([[59, 12],[55,-1],[12, -2],[12, 12]])); //['Senior', 'Open', 'Open', 'Open']
+  console.log(openOrSenior([[60, 12], [90, 9], [1, 1], [21, 21], [54, 9], [90, 8], [0, 0], [55, 10], [75, 11], [90, 7]])); //[\'Senior\', \'Senior\', \'Open\', \'Open\', \'Open\', \'Senior\', \'Open\', \'Senior\', \'Senior\', \'Open\']
   
   
