@@ -30,7 +30,7 @@ function openOrSenior(data){
     // }
     // return result;
     return data.map(r => {
-        if(r[0]>54 && r[[1]]) {
+        if(r[0]>54 && r[1]>6) {
             return 'Senior'
         } else {
             return 'Open'
