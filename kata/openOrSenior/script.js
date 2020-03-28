@@ -18,17 +18,24 @@
 
 function openOrSenior(data){
     
-    const result = []
+    // const result = []
 
-    for (let i = 0; i < data.length; i++) {
+    // for (let i = 0; i < data.length; i++) {
         
-        if (data[i][0] > 54 && data[i][1] > 6) {
-            result.push('Senior')
+    //     if (data[i][0] > 54 && data[i][1] > 6) {
+    //         result.push('Senior')
+    //     } else {
+    //         result.push('Open')
+    //     }
+    // }
+    // return result;
+    return data.map(r => {
+        if(r[0]>54 && r[[1]]) {
+            return 'Senior'
         } else {
-            result.push('Open')
+            return 'Open'
         }
-    }
-    return result;
+    })
 }
 
   console.log(openOrSenior([[45, 12],[55,21],[19, -2],[104, 20]])); //['Open', 'Senior', 'Open', 'Senior']
