@@ -1,40 +1,18 @@
+// Given a list of digits, return the smallest number that could be formed from these digits, using the digits only once (ignore duplicates).
+
+// Notes:
+
+// Only positive integers will be passed to the function (> 0 ), no negatives or zeros.
+
+// Input >> Output Examples
+
+// minValue ({1, 3, 1})  ==> return (13)
+
 let minValue = (values) => {
-    //your code here
+
     let string = [...new Set(values)] //.toString().replace(/,/g, "");
     string.sort((a, b) => a-b);
     return parseInt(string.join(''))
-   // let string = values;
-    //console.log(string);
-    
-    //return string;
-    // const arr = [];
-    // for (let i = 0; i < string.length; i++) {
-    //     for (let j = 0; j < string.length; j++) {
-    //        arr.push(string[i]+string[j])         
-    //     }
-        
-    // }
-    // return arr;
-    // let permutationsArray = [] 
-   
-    // for (let i = 0; i < string.length; i++){
-    //     let char = string[i]
-    //     //console.log(char);
-        
-    //     let remainingChars = string.slice(0, i) + string.slice(i + 1, string.length)
-    //     //console.log(remainingChars);
-        
-    //     for ( let j = 0; j < remainingChars.length; j++ ){
-    //     //for (let permutation of minValue(remainingChars)){
-    //     console.log(char);
-    //     //console.log(permutation);
-        
-
-    //     permutationsArray.push(char + permutation) }
-   // }
-    
-    //return permutationsArray
-   
 }
 
 console.log(minValue([1, 3, 1])); //13
