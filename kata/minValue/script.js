@@ -1,15 +1,28 @@
-function minValue(values){
+let minValue = (values) => {
     //your code here
-    arr = [...new Set(values)]
-    let results = [];
-    for (let i = 0; i < arr.length; i++) {
-        for (let j = 0; j < arr.length; j++) {
-
-            results.push(`${arr[i]}${arr[j]}`)
+    let string = [...new Set(values)].toString().replace(/,/g, "");
+    //return string;
+    const arr = [];
+    for (let i = 0; i < string.length; i++) {
+        for (let j = 0; j < string.length; j++) {
+           arr.push(string[i]+string[j])         
         }
         
     }
-    return results;
+    return arr;
+    // let permutationsArray = [] 
+   
+    // for (let i = 0; i < string.length; i++){
+    //     let char = string[i]
+
+    //     let remainingChars = string.slice(0, i) + string.slice(i + 1, string.length)
+
+    //     for (let permutation of minValue(remainingChars)){
+    //     permutationsArray.push(char + permutation) }
+    // }
+    
+    // return permutationsArray
+   
 }
 
 console.log(minValue([1, 3, 1])); //13
