@@ -1,27 +1,37 @@
 let minValue = (values) => {
     //your code here
-    let string = [...new Set(values)].toString().replace(/,/g, "");
-    //return string;
-    const arr = [];
-    for (let i = 0; i < string.length; i++) {
-        for (let j = 0; j < string.length; j++) {
-           arr.push(string[i]+string[j])         
-        }
-        
-    }
-    return arr;
-    // let permutationsArray = [] 
-   
-    // for (let i = 0; i < string.length; i++){
-    //     let char = string[i]
-
-    //     let remainingChars = string.slice(0, i) + string.slice(i + 1, string.length)
-
-    //     for (let permutation of minValue(remainingChars)){
-    //     permutationsArray.push(char + permutation) }
-    // }
+    //let string = [...new Set(values)].toString().replace(/,/g, "");
+    let string = values;
+    //console.log(string);
     
-    // return permutationsArray
+    //return string;
+    // const arr = [];
+    // for (let i = 0; i < string.length; i++) {
+    //     for (let j = 0; j < string.length; j++) {
+    //        arr.push(string[i]+string[j])         
+    //     }
+        
+    // }
+    // return arr;
+    let permutationsArray = [] 
+   
+    for (let i = 0; i < string.length; i++){
+        let char = string[i]
+        //console.log(char);
+        
+        let remainingChars = string.slice(0, i) + string.slice(i + 1, string.length)
+        //console.log(remainingChars);
+        
+        for ( let j = 0; j < remainingChars.length; j++ ){
+        //for (let permutation of minValue(remainingChars)){
+        console.log(char);
+        //console.log(permutation);
+        
+
+        permutationsArray.push(char + permutation) }
+    }
+    
+    return permutationsArray
    
 }
 
