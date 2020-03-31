@@ -10,9 +10,12 @@
 
 let minValue = (values) => {
 
-    let string = [...new Set(values)] //.toString().replace(/,/g, "");
-    string.sort((a, b) => a-b);
-    return parseInt(string.join(''))
+    // let string = [...new Set(values)] 
+    // string.sort((a, b) => a-b);
+    // return parseInt(string.join(''))
+
+    let arr = Array.from(new Set(values))
+    return parseInt(arr.sort().join(''))
 }
 
 console.log(minValue([1, 3, 1])); //13
