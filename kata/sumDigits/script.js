@@ -5,7 +5,6 @@ const sumDigits = (number) => {
     // let result = (""+number).replace(/[^0-9]/g, '').split("").reduce((a, b) => toNum(a) + toNum(b));
 
     // return parseInt(result)
-
   
     return Math.abs(number).toString().split('').reduce(function(a,b){return +a + +b}, 0);
 
