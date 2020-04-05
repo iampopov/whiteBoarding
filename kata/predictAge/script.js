@@ -9,14 +9,20 @@
 // Divide by two.
 
 
-function predictAge( age1, age2, age3, age4, age5, age6, age7, age8 ){
+// function predictAge( age1, age2, age3, age4, age5, age6, age7, age8 ){
 
     
-    const death = Math.floor((Math.sqrt(age1*age1 + age2*age2 + age3*age3 + age4*age4 + age5*age5 + age6*age6 + age7*age7 + age8*age8))/2)
+//     // const death = Math.floor((Math.sqrt(age1*age1 + age2*age2 + age3*age3 + age4*age4 + age5*age5 + age6*age6 + age7*age7 + age8*age8))/2)
 
 
-    return death;
-} 
+//     // return death;
+//     // let arr = [age1, age2, age3, age4, age5, age6, age7, age8]
+//     // return Math.floor(Math.sqrt(arr.map(a => a * a).reduce((b,c) => b + c)) / 2)
+
+
+// } 
+
+const predictAge = (...ages) => Math.hypot(...ages) / 2 | 0;
 
   console.log(predictAge(65,60,75,55,60,63,64,45)); //86
   //console.log(predictAge(false));
