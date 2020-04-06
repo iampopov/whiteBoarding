@@ -1,11 +1,14 @@
-function findLongest( arr ){
+// function findLongest( arr ){
   
-    const toStr = arr.map(val => String(val));
-    const longs = toStr.reduce((a,b) => {
-        return b.length > a.length ? b : a;
-    })
-  return Number(longs)
-} 
+//     const toStr = arr.map(val => String(val));
+//     const longs = toStr.reduce((a,b) => {
+//         return b.length > a.length ? b : a;
+//     })
+//   return Number(longs)
+// } 
+
+const findLongest = l => l
+  .reduce((a, b) => (`${b}`.length > `${a}`.length) ? b : a);
 
   console.log(findLongest([1, 10, 100])); //100
   console.log(findLongest([9000, 8, 800])); //9000
