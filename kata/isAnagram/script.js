@@ -1,7 +1,7 @@
 function isAnagram( test, original ){
   
     if (test.length === original.length) {
-        return true
+        return test.toLowerCase().replace(/[^a-z\d]/g, '').split('').sort().join('') == original.toLowerCase().replace(/[^a-z\d]/g, '').split('').sort().join('');
     } else {
         return false
     }
