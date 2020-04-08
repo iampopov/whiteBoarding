@@ -1,7 +1,7 @@
 function isAnagram( test, original ){
   
     
-    return test;
+    return test.length;
 } 
 
   console.log(isAnagram("foefet", "toffee")); //true
