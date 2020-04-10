@@ -1,13 +1,7 @@
-function boolToWord( bool ){
-    //...
-    // if (bool) { 
-    //     bool = "Yes";
-    //     return bool}
-    //     bool = "No";
-    //     return bool  
-    return (bool ? "Yes" : "No");
+function removeUrlAnchor( url ){
+      
+    return url;
 } 
 
-  console.log(boolToWord(true));
-  console.log(boolToWord(false));
+  console.log(removeUrlAnchor('www.codewars.com#about'));
   
