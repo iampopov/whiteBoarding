@@ -5,7 +5,8 @@ function removeUrlAnchor( url ){
     // } else {
     //     return url;
     // }
-    return url.substring(0, url.indexOf('#')) ? url.substring(0, url.indexOf('#')) : url;
+   // return url.substring(0, url.indexOf('#')) ? url.substring(0, url.indexOf('#')) : url;
+   return url.split('#')[0];
 } 
 
   console.log(removeUrlAnchor('www.codewars.com#about'));
