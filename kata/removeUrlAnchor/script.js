@@ -6,7 +6,6 @@ function removeUrlAnchor( url ){
     // }
    // return url.substring(0, url.indexOf('#')) ? url.substring(0, url.indexOf('#')) : url;
    //return url.split('#')[0];
-   
    return url.replace(/#.*/gi,"")
 } 
 
