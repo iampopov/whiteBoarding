@@ -1,13 +1,17 @@
-function boolToWord( bool ){
-    //...
-    // if (bool) { 
-    //     bool = "Yes";
-    //     return bool}
-    //     bool = "No";
-    //     return bool  
-    return (bool ? "Yes" : "No");
-} 
+var number=function(array){
 
-  console.log(boolToWord(true));
-  console.log(boolToWord(false));
+const result = [];
+
+if ( array === [] ) {
+  return array;
+} else {
+  for (let index = 0; index < array.length; index++) {
+    result.push(`${index+1}: ${array[index]}`)    
+  }
+}
+return result;
+}
+
+  console.log(number([]));
+  console.log(number(["a", "b", "c"]));
   
