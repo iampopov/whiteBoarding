@@ -10,6 +10,7 @@ if ( array === [] ) {
   }
 }
 return result;
+
 }
 
   console.log(number([]));
