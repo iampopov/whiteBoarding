@@ -1,5 +1,4 @@
 function removeUrlAnchor( url ){
-    
     // if (url.substring(0, url.indexOf('#'))) {
     //    return url.substring(0, url.indexOf('#')) 
     // } else {
