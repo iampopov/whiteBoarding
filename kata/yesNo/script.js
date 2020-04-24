@@ -5,6 +5,7 @@ function boolToWord( bool ){
     //     return bool}
     //     bool = "No";
     //     return bool  
+    
     return (bool ? "Yes" : "No");
 } 
 
