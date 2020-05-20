@@ -8,5 +8,5 @@ function boolToWord( bool ){
 } 
 
 console.log(boolToWord(true));
-  console.log(boolToWord(false));
+console.log(boolToWord(false));
   
