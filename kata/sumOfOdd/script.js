@@ -9,13 +9,14 @@ rowSumOddNumbers(1); // 1
 rowSumOddNumbers(2); // 3 + 5 = 8
 */
 const rowSumOddNumbers = (number) => {
-  nthOdd = (number - 1) * number + 1
-  let odd = []
-  for (let i = 0; i < number; i++) {
-    odd.push(nthOdd)
-    nthOdd = nthOdd + 2
-    }
-    return odd.reduce((a,b) => a+b);
+  // nthOdd = (number - 1) * number + 1
+  // let odd = []
+  // for (let i = 0; i < number; i++) {
+  //   odd.push(nthOdd)
+  //   nthOdd = nthOdd + 2
+  //   }
+  //   return odd.reduce((a,b) => a+b);
+  return Math.pow(number, 3);
 }
 
   console.log(rowSumOddNumbers(1)); //1
