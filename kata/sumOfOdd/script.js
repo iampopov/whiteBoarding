@@ -16,7 +16,8 @@ const rowSumOddNumbers = (number) => {
   //   nthOdd = nthOdd + 2
   //   }
   //   return odd.reduce((a,b) => a+b);
-  return Math.pow(number, 3);
+  //return Math.pow(number, 3);
+  return number*number*number
 }
 
   console.log(rowSumOddNumbers(1)); //1
