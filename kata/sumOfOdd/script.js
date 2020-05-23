@@ -17,9 +17,11 @@ const rowSumOddNumbers = (number) => {
   //return Math.pow(number, 3);
   return number*number*number
 }
-
   console.log(rowSumOddNumbers(1)); //1
+
   console.log(rowSumOddNumbers(2)); //8
+
   console.log(rowSumOddNumbers(3)); //27
+
   console.log(rowSumOddNumbers(42)); //74088
   
