@@ -6,7 +6,6 @@
 21    23    25    27    29
 rowSumOddNumbers(1); // 1
 rowSumOddNumbers(2); // 3 + 5 = 8 */
-
 const rowSumOddNumbers = (number) => {
   // nthOdd = (number - 1) * number + 1
   // let odd = []
